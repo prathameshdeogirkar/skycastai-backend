@@ -14,7 +14,6 @@ app.use(express.json());
 
 
 app.post("/chat", async (req, res) => {
-    // const userinpt = await req.body?.prompt;
 
     const prompt = req.body?.prompt;
 
