@@ -13,6 +13,14 @@ app.use(express.json());
 
 
 
+app.get("/health", (req, res)=>{
+    res.json({
+        "message": "server is running properly",
+        "status": 200
+    })
+});
+
+
 app.post("/chat", async (req, res) => {
 
     const prompt = req.body?.prompt;
